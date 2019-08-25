@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [];
+        function txt(str) {
+            var j = 0;
+            for (var i = 0; i < str.length; i++) {
+                if (arr.indexOf(str[i]) == -1) {
+                    arr.push(str[i]);
+                }
+            }
+            for (var j = 0; j < arr.length; j++) {
+                var mt = arr[j];
+                var hl = str.split(mt).length - 1;
+                console.log("字母" + mt + "出现了" + hl + "次");
+            }
+        }
+        var str = "aabbccdd";
+        txt(str);
+    </script>
+</body>
+
+</html>
