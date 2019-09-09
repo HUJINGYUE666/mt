@@ -1,0 +1,30 @@
+loadData() {
+  this.$http.get('.php',{params: {id: 1}})
+  .then(({data: {data, errcode, msg}}) => {
+  if (errcode === 0) {
+  } else {
+  $.toast(msg, 'forbidden') // 报错信息
+  // console.error("获取商品列表失败:" + msg);
+  }
+  }, (response) => {
+  // error callback
+  // console.log(response)
+  })
+}
+  
+loadData() {
+  let params = {id:1}
+  this.$http.post('.php',params)
+  .then(({data: {data, errcode, msg}}) => {
+  if (errcode === 0) {
+  } else {
+  $.toast(msg, 'forbidden') // 报错信息
+  // console.error("获取商品列表失败:" + msg);
+  }
+  }, (response) => {
+  // error callback
+  // console.log(response)
+  })
+}
+  
+  
