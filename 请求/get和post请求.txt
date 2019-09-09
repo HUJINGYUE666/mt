@@ -4,7 +4,7 @@ loadData() {
   if (errcode === 0) {
   } else {
   $.toast(msg, 'forbidden') // 报错信息
-  // console.error("获取商品列表失败:" + msg);
+  // console.error("获取失败:" + msg);
   }
   }, (response) => {
   // error callback
@@ -19,7 +19,7 @@ loadData() {
   if (errcode === 0) {
   } else {
   $.toast(msg, 'forbidden') // 报错信息
-  // console.error("获取商品列表失败:" + msg);
+  // console.error("获取失败:" + msg);
   }
   }, (response) => {
   // error callback
